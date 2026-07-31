@@ -1,0 +1,9 @@
+# Ignore artifacts:
+build
+coverage
+package.json
+package-lock.json
+tsconfig*
+eslint.config.js
+README.md
+vite.config.ts
