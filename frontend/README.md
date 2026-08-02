@@ -1,75 +1,270 @@
-# React + TypeScript + Vite
+# LEXA.dev — Design System & Creative Direction
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **Концепция:** Digital Product Studio of One. Не портфолио разработчика и не сайт веб-студии. Сайт должен ощущаться как дорогой цифровой продукт, который сам демонстрирует уровень работы.
 
-Currently, two official plugins are available:
+## Основная идея
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Сайт продает не код, а мышление, вкус, внимание к деталям и полный цикл разработки. После просмотра пользователь должен подумать:
 
-## React Compiler
+> *«Если собственный сайт настолько качественный, значит и мой проект будет таким же.»*
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
+# Бренд
 
-## Expanding the ESLint configuration
+**Тип:** Personal Digital Product Studio
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+**Позиционирование:** Один специалист. Полный цикл разработки. От идеи до запуска.
 
-```js
-export default defineConfig([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
+**Ассоциации:** Premium • Modern • Minimalism • Confidence • Technology • Craftsmanship
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+**Избегать:** Hacker • Cyberpunk • Gamer • Neon • Developer Portfolio
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+# Цвета
 
-```js
-// eslint.config.js
-import reactX from "eslint-plugin-react-x";
-import reactDom from "eslint-plugin-react-dom";
+### Background
 
-export default defineConfig([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs["recommended-typescript"],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
-```
+| Назначение | Цвет |
+|------------|-------|
+| Primary | `#090909` |
+| Secondary | `#111111` |
+| Surface | `#151515` |
+| Cards | `#181818` |
+
+### Text
+
+| Назначение | Цвет |
+|------------|-------|
+| Primary | `#FFFFFF` |
+| Secondary | `#CFCFCF` |
+| Muted | `#9D9D9D` |
+| Disabled | `#707070` |
+
+### Accent
+
+| Назначение | Цвет |
+|------------|-------|
+| Primary | `#4ADE80` |
+| Hover | `#5EF08F` |
+| Pressed | `#2EC56A` |
+| Glow | `rgba(74,222,128,.12)` |
+
+### Border
+
+Default: `rgba(255,255,255,.08)`  
+Hover: `rgba(255,255,255,.14)`
+
+---
+
+# Типографика
+
+**Шрифты:** Inter (основной), Geist или Satoshi (альтернатива).
+
+| Элемент | Размер | Weight |
+|---------|---------|--------|
+| Hero | 72–88px | 700–800 |
+| Section Title | 42–56px | 700 |
+| Subtitle | 20–24px | 400 |
+| Body | 16–18px | 400 |
+| Label | 12–14px | 600 Uppercase |
+
+**Line-height:** Hero 90%, текст 160%.  
+**Letter-spacing:** Hero `-0.05em`, Labels `0.15em`.
+
+---
+
+# Layout
+
+- Container: **1440px**
+- Content: **1200px**
+- Grid: **12 колонок**
+- Gap: **32px**
+- Section spacing: **160–220px**
+- Card padding: **32px**
+
+---
+
+# Border Radius
+
+| Элемент | Radius |
+|---------|---------|
+| Button | 14px |
+| Input | 16px |
+| Card | 20px |
+| Large Sections | 28px |
+
+---
+
+# Кнопки
+
+### Primary
+
+- Background: `#4ADE80`
+- Text: `#090909`
+- Hover: brightness +5%
+- Scale: `1.02`
+
+### Secondary
+
+- Transparent
+- Border: `rgba(255,255,255,.12)`
+- Hover: `rgba(255,255,255,.04)`
+
+---
+
+# Освещение и тени
+
+Практически без теней. Только мягкий blur (40–80px) с opacity 5–8%. Зеленое свечение используется только вокруг CTA, активных элементов и устройств в Hero.
+
+---
+
+# Фон
+
+Минимальный.
+
+Допускается:
+- слабый radial gradient;
+- едва заметный шум;
+- сетка 2–3% opacity.
+
+Запрещено:
+- иконки;
+- терминалы;
+- частицы;
+- код;
+- Matrix;
+- декоративный шум.
+
+---
+
+# Иконки
+
+- Outline
+- 1.5px stroke
+- 20–24px
+- `#BDBDBD`
+- Hover → Accent Green
+
+---
+
+# Hero Image
+
+Студийная фотография устройств.
+
+- черный Windows-ноутбук;
+- черный Huawei-планшет;
+- черный iPhone;
+- на всех открыт один и тот же сайт;
+- фон `#090909`;
+- мягкий контровой свет;
+- без логотипов;
+- без лишних объектов;
+- ощущение дорогой рекламной фотографии Apple / Microsoft.
+
+---
+
+# Анимации
+
+Принцип: **Less is more.**
+
+Использовать:
+- Fade;
+- TranslateY (10–20px);
+- Scale (1 → 1.02);
+- слабый Parallax;
+- Hover 200–300ms;
+- Reveal 400–600ms.
+
+Не использовать:
+- Bounce;
+- Rotate;
+- Flip;
+- длинные easing;
+- постоянное движение.
+
+---
+
+# Контент
+
+Каждый экран = одна мысль.
+
+Пример структуры:
+
+1. Hero
+2. Философия
+3. Процесс
+4. Кейсы
+5. Возможности
+6. О себе
+7. CTA
+
+Не делать длинные полотна текста.
+
+---
+
+# Кейсы
+
+Не просто портфолио, а доказательство подхода.
+
+Структура каждого кейса:
+
+**Мысль → Задача → Решение → Результат**
+
+---
+
+# Тон текста
+
+Коротко. Уверенно. Без маркетинговых клише.
+
+❌ Современные сайты высокого качества.
+
+✅ Создаю сайты, которые помогают бизнесу получать клиентов.
+
+---
+
+# Пользовательский опыт
+
+Через 5 секунд — *«Красиво.»*
+
+Через 15 секунд — *«Очень аккуратно.»*
+
+Через 30 секунд — *«Этот человек понимает продукт.»*
+
+Через минуту — *«Хочу обсудить проект.»*
+
+---
+
+# Источники вдохновения
+
+- Vercel
+- Linear
+- Raycast
+- Framer
+- Resend
+- Apple
+
+Не копировать дизайн. Заимствовать только философию.
+
+---
+
+# Чего избегать
+
+- кислотных цветов;
+- тяжелых теней;
+- стекломорфизма везде;
+- больших градиентов;
+- перегруженного фона;
+- лишних анимаций;
+- терминалов;
+- Matrix-эстетики;
+- "3D ради 3D";
+- длинных текстов;
+- штампов вроде *«качественно», «надежно», «индивидуальный подход»*.
+
+---
+
+# Главная цель
+
+Сайт должен восприниматься как сайт дорогой digital product studio, в которой работает один человек, а не как очередное портфолио разработчика.

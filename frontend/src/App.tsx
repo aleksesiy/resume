@@ -1,7 +1,9 @@
+import Hero from "./sections/Hero";
+
 function App() {
   return (
     <>
-      <h1>Resume</h1>
+      <Hero />
     </>
   );
 }
