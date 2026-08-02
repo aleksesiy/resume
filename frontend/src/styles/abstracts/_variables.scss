@@ -1,53 +1,52 @@
 :root {
-    /* Background */
+  /* Background */
 
-    --bg: #090909;
-    --bg-secondary: #111111;
-    --surface: #151515;
-    --surface-hover: #181818;
+  --bg: #090909;
+  --bg-secondary: #111111;
+  --surface: #151515;
+  --surface-hover: #181818;
 
-    /* Text */
+  /* Text */
 
-    --text: #ffffff;
-    --text-secondary: #cfcfcf;
-    --text-muted: #9d9d9d;
+  --text: #ffffff;
+  --text-secondary: #cfcfcf;
+  --text-muted: #9d9d9d;
 
-    /* Accent */
+  /* Accent */
 
-    --accent: #4ade80;
-    --accent-hover: #5ef08f;
-    --accent-active: #2ec56a;
+  --accent: #4ade80;
+  --accent-hover: #5ef08f;
+  --accent-active: #2ec56a;
 
-    /* Borders */
+  /* Borders */
 
-    --border: rgba(255, 255, 255, .08);
-    --border-hover: rgba(255, 255, 255, .14);
+  --border: rgba(255, 255, 255, 0.08);
+  --border-hover: rgba(255, 255, 255, 0.14);
 
-    /* Radius */
+  /* Radius */
 
-    --radius-sm: 12px;
-    --radius-md: 16px;
-    --radius-lg: 20px;
-    --radius-xl: 28px;
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
 
-    /* Container */
+  /* Container */
 
-    --container: 1280px;
+  --container: 1280px;
 
-    /* Section spacing */
+  /* Section spacing */
 
-    --section-padding: 180px;
+  --section-padding: 180px;
 
-    /* Shadows */
+  /* Shadows */
 
-    --shadow-soft: 0 10px 40px rgba(0, 0, 0, .2);
+  --shadow-soft: 0 10px 40px rgba(0, 0, 0, 0.2);
 
-    --shadow-glow:
-        0 0 80px rgba(74, 222, 128, .08);
+  --shadow-glow: 0 0 80px rgba(74, 222, 128, 0.08);
 
-    /* Animation */
+  /* Animation */
 
-    --duration-fast: .2s;
-    --duration: .3s;
-    --duration-slow: .5s;
+  --duration-fast: 0.2s;
+  --duration: 0.3s;
+  --duration-slow: 0.5s;
 }

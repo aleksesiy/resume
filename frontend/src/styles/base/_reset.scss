@@ -1,0 +1,120 @@
+// SCSS Reset Configuration Variables
+$reset-box-sizing: border-box !default;
+$reset-line-height: 1.5 !default;
+$reset-font-fallback: sans-serif !default;
+
+// 1. Enforce an intuitive box model
+*,
+*::before,
+*::after {
+  box-sizing: $reset-box-sizing;
+}
+
+// 2. Remove default margins and padding for layout elements
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr {
+  margin: 0;
+  padding: 0;
+}
+
+// 3. Remove heading margins and match typography sizing
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: 100%;
+  font-weight: normal;
+}
+
+// 4. Set core body defaults
+body {
+  min-height: 100vh;
+  line-height: $reset-line-height;
+  font-family: $reset-font-fallback;
+  -webkit-font-smoothing: antialiased; // Smooth font rendering on macOS
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+// 5. Lists optimization
+ul,
+ol {
+  list-style: none;
+}
+
+// 6. Media responsive elements defaults
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+// 7. Inherit fonts for form inputs and controls
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  margin: 0;
+}
+
+// 8. Make clickable form elements show a pointer
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  cursor: pointer;
+}
+
+// 9. Handle text wrap behaviors for better readability
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+// 10. Respect user motion preferences by disabling animations if requested
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
