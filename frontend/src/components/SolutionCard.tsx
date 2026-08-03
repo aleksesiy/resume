@@ -1,13 +1,19 @@
 import AccentButton from "./AccentButton";
 import type { Solution } from "../types/types";
+import { Spoiler } from "spoiled";
 
 type Props = {
   solution: Solution;
+  index: number;
 };
+const ctaLabel = [
+  "Хотите такой же?",
+  "Нужно что-то похожее?",
+  "Сколько будет стоить такой проект?",
+];
 
-export default function SolutionCard({ solution }: Props) {
+export default function SolutionCard({ solution, index }: Props) {
   const { project, service } = solution;
-
   return (
     <article className="py-2">
       <div
@@ -33,7 +39,6 @@ export default function SolutionCard({ solution }: Props) {
 
         <div
           className="
-                    mt-10
                     overflow-hidden
                     rounded-3xl
                     border
@@ -41,6 +46,7 @@ export default function SolutionCard({ solution }: Props) {
                     bg-(--surface)
                     max-w-[90vw]
                     max-h-[30dvh]
+                    min-h-[200px]
                 "
         >
           <img
@@ -100,8 +106,8 @@ export default function SolutionCard({ solution }: Props) {
 
       {/* SERVICE */}
 
-      <h2 className="mt-10 max-w-2xl  text-(--text-secondary)">
-        Хотите такой же?
+      <h2 className="mt-10   text-(--text-secondary)">
+        {ctaLabel[index % ctaLabel.length]}
       </h2>
 
       <div
@@ -117,10 +123,11 @@ export default function SolutionCard({ solution }: Props) {
                     p-10
                 "
       >
-        <span className="section-label">Решение</span>
+        <Spoiler density={0.2} tagName="div" revealOn="click" fps={20}>
+          <span className="section-label text-(--accent-spoiled)">Решение</span>
 
-        <div
-          className="
+          <div
+            className="
                         mt-4
 
                         flex
@@ -129,59 +136,60 @@ export default function SolutionCard({ solution }: Props) {
                         justify-between
                         gap-8
                     "
-        >
-          <div>
-            <h3>{service.title}</h3>
+          >
+            <div>
+              <h3>{service.title}</h3>
 
-            <p className="mt-2 text-(--text-secondary)">{service.subtitle}</p>
+              <p className="mt-2 text-(--text-secondary)">{service.subtitle}</p>
+            </div>
+
+            <div>
+              <div className="text-4xl font-bold">{service.price}</div>
+            </div>
           </div>
 
-          <div>
-            <div className="text-4xl font-bold">{service.price}</div>
-          </div>
-        </div>
+          <p className="mt-8 max-w-3xl">{service.description}</p>
 
-        <p className="mt-8 max-w-3xl">{service.description}</p>
+          <div className="my-4 h-px bg-(--border)" />
 
-        <div className="my-4 h-px bg-(--border)" />
-
-        <ul
-          className="
+          <ul
+            className="
                         grid
                         gap-4
 
                         md:grid-cols-2
                     "
-        >
-          {service.includes.map((item) => (
-            <li
-              key={item}
-              className="
+          >
+            {service.includes.map((item) => (
+              <li
+                key={item}
+                className="
                                 flex
                                 items-center
                                 gap-3
                             "
-            >
-              <div
-                className="
+              >
+                <div
+                  className="
                                     h-2
                                     w-2
                                     rounded-full
-                                    bg-(--accent)
+                                    bg-(--accent-spoiled)
                                 "
-              />
+                />
 
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
-        <div className="m-3">
-          <AccentButton
-            buttonLabel={service.buttonLabel}
-            url=""
-            variant="light"
-          />
-        </div>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+          <div className="m-3">
+            <AccentButton
+              buttonLabel={service.buttonLabel}
+              url=""
+              variant="light"
+            />
+          </div>
+        </Spoiler>
       </div>
     </article>
   );
@@ -243,7 +251,7 @@ function InfoList({ title, items }: InfoListProps) {
                                 h-2
                                 w-2
                                 rounded-full
-                                bg-(--accent)
+                                bg-(--accent-spoiled)
                             "
             />
 

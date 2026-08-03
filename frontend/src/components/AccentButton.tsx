@@ -10,12 +10,12 @@ const AccentButton = ({
   variant?: "dark" | "light";
 }) => {
   const textColor =
-    variant === "dark" ? "text-(--accent)" : "text-(--text-accent)";
+    variant === "dark" ? "text-(--accent-spoiled)" : "text-(--text-accent)";
   return (
     <div
       className={`
             duration-200
-        ${variant === "light" && "rounded-lg bg-(--accent) hover:bg-(--accent-hover) p-3 w-fit"}
+        ${variant === "light" && "rounded-lg bg-(--accent-spoiled) hover:bg-(--accent-hover) p-3 w-fit"}
             `}
     >
       <a

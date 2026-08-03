@@ -9,8 +9,8 @@ export default function Solutions() {
           <h2 className="mt-4">Решения</h2>
         </div>
         <div>
-          {solutions.map((elem) => (
-            <SolutionCard key={elem.project.id} solution={elem} />
+          {solutions.map((elem, index) => (
+            <SolutionCard key={elem.project.id} solution={elem} index={index} />
           ))}
         </div>
       </div>
