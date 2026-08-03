@@ -90,7 +90,7 @@ export default function Process() {
             className="
               absolute
               left-0
-              right-0
+              right-[20%]
               top-7
               hidden
               h-px
@@ -120,7 +120,7 @@ export default function Process() {
               ease: "easeInOut",
             }}
             viewport={{ once: true }}
-            style={{ width: "100%" }}
+            style={{ width: "80%" }}
           />
 
           {/* Desktop */}

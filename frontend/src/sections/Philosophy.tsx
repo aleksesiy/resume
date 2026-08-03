@@ -19,23 +19,27 @@ const features = [
 ];
 const Philosophy = () => {
   return (
-    <section className="section flex gap-3 items-center">
-      <article className="md:max-w-[30%]">
-        <h3>Философия</h3>
-        <h2>Красивый дизайн – это только начало</h2>
-        <p>Сайт должен решать задачу</p>
-      </article>
-      <section className="flex gap-4">
-        {features.map((elem) => (
-          <div className="flex w-full">
-            <FeatureItem
-              iconName={elem.iconName}
-              title={elem.title}
-              description={elem.description}
-            />
+    <section className="section flex flex-col gap-3 items-start">
+      <div className="container">
+        <article>
+          <div className="mb-20">
+            <span className="section-label">Принцип</span>
+            <h2 className="mt-4">Красивого сайта мало</h2>
+            <p>Сайт должен решать задачу</p>
           </div>
-        ))}
-      </section>
+        </article>
+        <section className="flex gap-4 self-center">
+          {features.map((elem) => (
+            <div className="flex w-full">
+              <FeatureItem
+                iconName={elem.iconName}
+                title={elem.title}
+                description={elem.description}
+              />
+            </div>
+          ))}
+        </section>
+      </div>
     </section>
   );
 };
