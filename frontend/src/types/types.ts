@@ -12,3 +12,19 @@ export type Project = {
   image: string;
   url: string;
 };
+
+export type ServicePackage = {
+  id: number;
+  title: string;
+  subtitle: string;
+  price: string;
+  description: string;
+  includes: string[];
+  buttonLabel: string;
+  isPopular: boolean;
+};
+
+export type Solution = {
+  project: Project;
+  service: ServicePackage;
+};
