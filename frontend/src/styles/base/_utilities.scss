@@ -1,10 +1,19 @@
 .container {
   width: min(var(--container), calc(100% - 64px));
   margin-inline: auto;
+
+  @media (max-width: 768px) {
+    width: min(var(--container), calc(100% - 2px));
+    margin: 0 auto;
+  }
 }
 
 .section {
   padding: var(--section-padding) 3em;
+
+  @media (max-width: 768px) {
+    padding: var(--section-padding) 1em;
+  }
 }
 
 .card {

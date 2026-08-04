@@ -144,7 +144,7 @@ export default function Process() {
                 duration: 1,
               }}
               viewport={{ once: true }}
-              style={{ height: "100%" }}
+              style={{ height: "85%" }}
             />
 
             {steps.map((step, index) => (

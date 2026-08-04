@@ -15,7 +15,7 @@ const ctaLabel = [
 export default function SolutionCard({ solution, index }: Props) {
   const { project, service } = solution;
   return (
-    <article className="py-2">
+    <article className="py-10">
       <div
         className="
                     mt-1
@@ -80,7 +80,7 @@ export default function SolutionCard({ solution, index }: Props) {
 
       {/* STACK */}
 
-      <div className="flex justify-between">
+      <div className="flex justify-between lg:flex-wrap-none flex-wrap">
         <div className="mt-8 flex flex-wrap items-baseline gap-3">
           <span>Использованы: </span>
           {project.stack.map((item) => (
@@ -106,7 +106,7 @@ export default function SolutionCard({ solution, index }: Props) {
 
       {/* SERVICE */}
 
-      <h2 className="mt-10   text-(--text-secondary)">
+      <h2 className="pt-10   text-(--text-secondary)">
         {ctaLabel[index % ctaLabel.length]}
       </h2>
 
@@ -119,8 +119,8 @@ export default function SolutionCard({ solution, index }: Props) {
                     border-(--border)
 
                     bg-(--surface)
-
-                    p-10
+                    p-5
+                    lg:p-10
                 "
       >
         <Spoiler density={0.2} tagName="div" revealOn="click" fps={20}>

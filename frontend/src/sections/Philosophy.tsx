@@ -34,7 +34,7 @@ const Philosophy = () => {
             <p>Сайт должен решать задачу</p>
           </div>
         </article>
-        <section className="flex gap-4 self-center">
+        <section className="flex gap-4 flex-wrap self-center">
           {features.map((elem) => (
             <div className="flex w-full">
               <FeatureItem

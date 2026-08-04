@@ -8,9 +8,9 @@ export default function Footer() {
         {/* CTA */}
         <div className="flex flex-col items-center gap-10 border-b border-(--border) pb-10">
           <div>
-            <span className="section-label text-center">
+            <h3 className="section-label text-center">
               Следующий проект может быть вашим
-            </span>
+            </h3>
           </div>
         </div>
         {/* Contacts */}
