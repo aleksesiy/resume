@@ -1,0 +1,35 @@
+.container {
+  width: min(var(--container), calc(100% - 64px));
+  margin-inline: auto;
+
+  @media (max-width: 768px) {
+    width: min(var(--container), calc(100% - 2px));
+    margin: 0 auto;
+  }
+}
+
+.section {
+  padding: var(--section-padding) 3em;
+
+  @media (max-width: 768px) {
+    padding: var(--section-padding) 1em;
+  }
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+
+.glow {
+  box-shadow: var(--shadow-glow);
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+.text-accent {
+  color: var(--accent);
+}
