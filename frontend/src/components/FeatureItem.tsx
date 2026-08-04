@@ -42,7 +42,7 @@ const FeatureItem: React.FC<Props> = ({
 
   const content = (
     <>
-      <div className="bg-(--bg-secondary) rounded-3xl p-2">
+      <div className="bg-(--bg-secondary) rounded-3xl p-2 shrink-0">
         <Icon
           name={variant === "checklist" ? "CircleCheckBig" : iconName}
           size={iconSize}
@@ -76,7 +76,7 @@ const FeatureItem: React.FC<Props> = ({
     );
   }
 
-  return <div className={containerClass}>{content}</div>;
+  return <div className={containerClass + " items-start"}>{content}</div>;
 };
 
 export default FeatureItem;
