@@ -1,3 +1,4 @@
+import About from "./sections/About";
 import Facts from "./sections/Facts";
 import Hero from "./sections/Hero";
 import Philosophy from "./sections/Philosophy";
@@ -16,6 +17,7 @@ function App() {
       {/* <Projects /> */}
       {/* <Services /> */}
       <Solutions />
+      <About />
     </>
   );
 }
