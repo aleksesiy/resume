@@ -22,7 +22,10 @@ const features = [
 ];
 const Philosophy = () => {
   return (
-    <section className="section flex flex-col gap-3 items-start">
+    <section
+      className="section flex flex-col gap-3 items-start"
+      id="philosophy"
+    >
       <div className="container">
         <article>
           <div className="mb-20">

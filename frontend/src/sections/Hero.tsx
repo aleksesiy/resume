@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
+import ScrollHint from "../components/ScrollHint";
 
 const Hero = () => {
   // Create a reference to store the DOM element
@@ -23,13 +24,22 @@ const Hero = () => {
   }, []); // Empty dependency array ensures this runs once on mount
 
   return (
-    <section className="section">
-      <div>
+    <section className="section relative">
+      <div className="mt-30">
         <h1 className="text-center">
           Единственный <br />
           разработчик, который <br />
           нужен <span ref={el} />
         </h1>
+      </div>
+      <div className="absolute left-1/2 -translate-x-1/2 -bottom-7">
+        <ScrollHint
+          onClick={() =>
+            document
+              .getElementById("philosophy")
+              ?.scrollIntoView({ behavior: "smooth" })
+          }
+        />
       </div>
     </section>
   );
