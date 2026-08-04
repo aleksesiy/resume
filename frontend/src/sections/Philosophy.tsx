@@ -2,19 +2,22 @@ import FeatureItem from "../components/FeatureItem";
 
 const features = [
   {
-    iconName: "UserRound",
-    title: "Понимаю цели бизнеса",
-    description: "и создаю решения, которые работают.",
+    title: "Один разработчик",
+    description:
+      "Весь проект в одних руках — без посредников и потери качества.",
+    iconName: "User",
   },
   {
-    iconName: "CodeXml",
-    title: "Пишу чистый код",
-    description: "и строю надежные цифровые продукты.",
+    title: "Понятный процесс",
+    description:
+      "Прозрачная работа, регулярные обновления и согласование каждого этапа.",
+    iconName: "Workflow",
   },
   {
+    title: "От идеи до запуска",
+    description:
+      "Полный цикл разработки: дизайн, верстка, backend, база данных и деплой.",
     iconName: "Rocket",
-    title: "Запускаю и сопровождаю",
-    description: "чтобы сайт стабильно приносил пользу.",
   },
 ];
 const Philosophy = () => {

@@ -1,4 +1,5 @@
 import FeatureItem from "../components/FeatureItem";
+import Reveal from "../components/Reveal";
 import SolutionCard from "../components/SolutionCard";
 import { contacts } from "../data/contacts";
 import { solutions } from "../data/solutions";
@@ -12,7 +13,9 @@ export default function Solutions() {
         </div>
         <div>
           {solutions.map((elem, index) => (
-            <SolutionCard key={elem.project.id} solution={elem} index={index} />
+            <Reveal key={elem.project.id}>
+              <SolutionCard solution={elem} index={index} />
+            </Reveal>
           ))}
         </div>
         <div className="mt-20">

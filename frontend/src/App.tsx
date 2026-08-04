@@ -1,5 +1,6 @@
+import Reveal from "./components/Reveal";
 import About from "./sections/About";
-import Facts from "./sections/Facts";
+// import Facts from "./sections/Facts";
 import Footer from "./sections/Footer";
 import Hero from "./sections/Hero";
 import Philosophy from "./sections/Philosophy";
@@ -11,10 +12,12 @@ import Solutions from "./sections/Solutions";
 function App() {
   return (
     <>
-      <Hero />
+      <Reveal>
+        <Hero />
+      </Reveal>
       <Philosophy />
       <Process />
-      <Facts />
+      {/* <Facts /> */}
       {/* <Projects /> */}
       {/* <Services /> */}
       <Solutions />

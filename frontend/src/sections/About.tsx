@@ -1,4 +1,5 @@
 import FeatureItem from "../components/FeatureItem";
+import Reveal from "../components/Reveal";
 
 export default function About() {
   return (
@@ -47,29 +48,35 @@ export default function About() {
             </div>
 
             <div className="mt-12 flex flex-col gap-8">
-              <FeatureItem
-                variant="default"
-                direction="row"
-                iconName="MessagesSquare"
-                title="Работаем напрямую"
-                description="Без посредников, лишних созвонов и долгих согласований."
-              />
+              <Reveal>
+                <FeatureItem
+                  variant="default"
+                  direction="row"
+                  iconName="MessagesSquare"
+                  title="Работаем напрямую"
+                  description="Без посредников, лишних созвонов и долгих согласований."
+                />
+              </Reveal>
 
-              <FeatureItem
-                variant="default"
-                direction="row"
-                iconName="Layers3"
-                title="Полный цикл"
-                description="Дизайн, frontend, backend, запуск и дальнейшая поддержка."
-              />
+              <Reveal>
+                <FeatureItem
+                  variant="default"
+                  direction="row"
+                  iconName="Layers3"
+                  title="Полный цикл"
+                  description="Дизайн, frontend, backend, запуск и дальнейшая поддержка."
+                />
+              </Reveal>
 
-              <FeatureItem
-                variant="default"
-                direction="row"
-                iconName="BadgeCheck"
-                title="Ответственность"
-                description="За каждый этап проекта отвечаю лично, а не команда из разных специалистов."
-              />
+              <Reveal>
+                <FeatureItem
+                  variant="default"
+                  direction="row"
+                  iconName="BadgeCheck"
+                  title="Ответственность"
+                  description="За каждый этап проекта отвечаю лично, а не команда из разных специалистов."
+                />
+              </Reveal>
             </div>
           </div>
         </div>
