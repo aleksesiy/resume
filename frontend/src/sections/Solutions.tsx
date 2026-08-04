@@ -18,12 +18,12 @@ export default function Solutions() {
             </Reveal>
           ))}
         </div>
-        <div className="mt-20">
+        <div className="mt-60">
           <h3 className="text-center">Не нашли подходящий вариант?</h3>
           <h2 className="text-center">
             Напишите мне — подберем решение под ваш проект
           </h2>
-          <div className="flex gap-3 justify-center mt-5">
+          <div className="flex flex-wrap gap-3 justify-center mt-5">
             {contacts.map((elem) => (
               <FeatureItem
                 iconName={elem.iconName}
