@@ -3,11 +3,11 @@ import type { ServicePackage } from "../types/types";
 export const services: ServicePackage[] = [
   {
     id: 1,
-    title: "Старт",
+    title: "Лэндинг",
 
     subtitle: "Идеально для небольших проектов и лендингов.",
 
-    price: "от 30 000 ₽",
+    price: "от 15 000 ₽",
 
     description: "Быстрый запуск современного сайта с индивидуальным дизайном.",
 
@@ -19,9 +19,9 @@ export const services: ServicePackage[] = [
       "Публикация проекта",
     ],
 
-    buttonLabel: "Выбрать пакет",
+    buttonLabel: "Связаться",
 
-    isPopular: false,
+    isPopular: true,
   },
 
   {
@@ -51,20 +51,24 @@ export const services: ServicePackage[] = [
   {
     id: 3,
 
-    title: "Под ключ",
+    title: "Мобильное приложение",
 
     subtitle:
-      "Полное решение — от первой идеи до запуска и дальнейшего развития.",
+      "Кроссплатформенная разработка приложений для iOS и Android на React Native.",
 
     price: "от 100 000 ₽",
 
-    description: "Когда проект требует backend, интеграций и сложной логики.",
+    description:
+      "Полный цикл разработки мобильного приложения — от проектирования интерфейса до публикации в App Store и Google Play.",
 
     includes: [
-      "Все возможности пакета «Стандарт»",
-      "Backend",
+      "UX/UI дизайн",
+      "React Native + TypeScript",
+      "Backend и REST API",
       "База данных",
-      "API и интеграции",
+      "Авторизация пользователей",
+      "Интеграция сторонних сервисов",
+      "Публикация в магазинах приложений",
       "Поддержка после запуска",
     ],
 

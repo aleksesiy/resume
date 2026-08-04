@@ -46,7 +46,7 @@ export default function SolutionCard({ solution, index }: Props) {
                     bg-(--surface)
                     max-w-[90vw]
                     max-h-[30dvh]
-                    min-h-[200px]
+                    min-h-[100px]
                 "
         >
           <img

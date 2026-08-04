@@ -10,7 +10,7 @@ export const solutions: Solution[] = [
 
   {
     project: projects[1],
-    service: services[1],
+    service: services[0],
   },
 
   {
