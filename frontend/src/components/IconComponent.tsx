@@ -10,7 +10,7 @@ interface IconProps extends LucideProps {
 }
 
 export function Icon({ name, ...props }: IconProps) {
-  if (["telegram", "whatsapp", "vk"].includes(name)) {
+  if (["telegram", "whatsapp", "vk", "github", "gmail"].includes(name)) {
     return <SimpleIcon slug={name as ContactIconSlug} {...props} />;
   }
   const IconComponent = iconMap[name];

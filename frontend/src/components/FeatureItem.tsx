@@ -36,7 +36,7 @@ const FeatureItem: React.FC<Props> = ({
 
   const containerClass = `
         flex
-        ${direction === "col" ? "flex-col text-left items-start" : "flex-row items-start"}
+        ${direction === "col" ? "flex-col text-left items-start" : "flex-row"}
         ${direction === "row" ? "gap-4" : "gap-5"}
     `;
 
@@ -70,7 +70,7 @@ const FeatureItem: React.FC<Props> = ({
 
   if (variant === "contact" && href) {
     return (
-      <a href={href} className={containerClass}>
+      <a href={href} className={containerClass + " items-center"}>
         {content}
       </a>
     );

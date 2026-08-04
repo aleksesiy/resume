@@ -1,10 +1,11 @@
 import type { SVGProps } from "react";
-import { siTelegram, siWhatsapp, siVk } from "simple-icons";
-
+import { siTelegram, siWhatsapp, siVk, siGithub, siGmail } from "simple-icons";
 const iconMap = {
   telegram: siTelegram,
   whatsapp: siWhatsapp,
   vk: siVk,
+  gmail: siGmail,
+  github: siGithub,
 };
 interface SimpleIconProps extends SVGProps<SVGSVGElement> {
   slug: keyof typeof iconMap;
