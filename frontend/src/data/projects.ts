@@ -44,7 +44,7 @@ export const projects: Project[] = [
 
     buttonLabel: "Открыть проект",
 
-    image: "/src/assets/speaking-site.jpg",
+    image: "/speaking-site.jpg",
 
     url: "/projects/speaking",
   },
@@ -93,7 +93,7 @@ export const projects: Project[] = [
 
     buttonLabel: "Открыть проект",
 
-    image: "src/assets/rinat-site.jpg",
+    image: "rinat-site.jpg",
 
     url: "https://coolteachers.ru",
   },
@@ -131,7 +131,7 @@ export const projects: Project[] = [
 
     buttonLabel: "Страница в Google Play",
 
-    image: "src/assets/workouter.jpg",
+    image: "workouter.jpg",
 
     url: "https://play.google.com/store/apps/details?id=com.aleksesiy.workouter",
   },
