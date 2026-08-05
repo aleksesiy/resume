@@ -2,19 +2,19 @@ export const contacts = [
   {
     id: 1,
     iconName: "gmail",
-    profileName: "hello@lexa.dev",
-    href: "mailto:hello@lexa.dev",
+    profileName: "lexa.svsk@gmail.com",
+    href: "mailto:lexa.svsk@gmail.com",
   },
   {
     id: 2,
     iconName: "telegram",
-    profileName: "@lexa_dev",
-    href: "https://t.me/lexa_dev",
+    profileName: "@aleksessiy",
+    href: "https://t.me/aleksessiy",
   },
   {
     id: 3,
     iconName: "github",
-    profileName: "github.com/lexadev",
-    href: "https://github.com/lexadev",
+    profileName: "github.com/aleksesiy",
+    href: "https://github.com/aleksesiy",
   },
 ];
