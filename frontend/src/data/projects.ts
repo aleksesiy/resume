@@ -46,7 +46,7 @@ export const projects: Project[] = [
 
     image: "/speaking-site.jpg",
 
-    url: "http://zhuchi-soboi.ru",
+    url: "http://zvuchi-soboi.ru",
   },
 
   {
@@ -115,7 +115,7 @@ export const projects: Project[] = [
       "Разработка мобильного приложения",
       "Кроссплатформенная разработка",
       "Проектирование архитектуры",
-      "Публикация в App Store и Google Play",
+      "Публикация в Google Play",
     ],
 
     result:
