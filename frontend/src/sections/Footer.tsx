@@ -31,6 +31,25 @@ export default function Footer() {
           <p>2026, Алексей Рябинин</p>
           <p>Разработка сайтов под ключ — от идеи до запуска.</p>
         </div>
+        {/* Legal: страницы оплаты и документов отдаёт отдельное приложение на /oplata */}
+        <div className="flex flex-col gap-4 border-t border-(--border) pt-10 text-sm md:flex-row md:items-start md:justify-between">
+          <p className="text-(--text-muted)">
+            Рябинин Алексей Вячеславович
+            <br />
+            Самозанятый, плательщик НПД · ИНН 702409347928
+          </p>
+          <nav className="flex flex-wrap gap-x-6 gap-y-2">
+            <a className="text-(--text-muted) duration-200 hover:text-(--accent)" href="/oplata">
+              Оплата
+            </a>
+            <a className="text-(--text-muted) duration-200 hover:text-(--accent)" href="/oplata/oferta">
+              Публичная оферта
+            </a>
+            <a className="text-(--text-muted) duration-200 hover:text-(--accent)" href="/oplata/politika-pd">
+              Политика обработки ПД
+            </a>
+          </nav>
+        </div>
       </div>
     </footer>
   );

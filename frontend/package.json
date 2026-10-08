@@ -10,8 +10,7 @@
     "preview": "vite preview",
     "format": "npx prettier . --write",
     "prepare": "husky",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "./deploy.sh"
   },
   "lint-staged": {
     "**/*.(js|ts|jsx|tsx)": [
