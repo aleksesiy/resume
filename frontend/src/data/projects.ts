@@ -1,138 +1,95 @@
 import type { Project } from "../types/types";
 
+import impulso from "../assets/projects/impulso-1280.webp";
+import impulsoSmall from "../assets/projects/impulso-720.webp";
+import kvinka from "../assets/projects/kvinka-1280.webp";
+import kvinkaSmall from "../assets/projects/kvinka-720.webp";
+import coolteachers from "../assets/projects/coolteachers-1280.webp";
+import coolteachersSmall from "../assets/projects/coolteachers-720.webp";
+import alicemath from "../assets/projects/alicemath-1280.webp";
+import alicemathSmall from "../assets/projects/alicemath-720.webp";
+import meridian from "../assets/projects/meridian-1280.webp";
+import meridianSmall from "../assets/projects/meridian-720.webp";
+import workouter from "../assets/projects/workouter-1280.webp";
+import workouterSmall from "../assets/projects/workouter-720.webp";
+
 export const projects: Project[] = [
   {
-    id: 1,
-
-    title: "Сайт для Ангелины",
-
-    category: "Лэндинг",
-
-    shortDescription:
-      "Сайт преподавателя по технике речи с административной панелью и собственной CMS.",
-
-    longDescription:
-      "Разработал full-stack приложение для преподавателя по технике речи. Помимо публичного сайта реализовал REST API, административную панель, систему управления контентом и базу данных. Все разделы сайта — главный экран, услуги, отзывы, FAQ и контакты — редактируются через удобный интерфейс без изменения кода.",
-
-    services: [
-      "UX/UI дизайн",
-      "Frontend разработка",
-      "Backend разработка",
-      "REST API",
-      "Административная панель",
-      "JWT-аутентификация",
-      "Проектирование базы данных",
-      "Docker и деплой",
-    ],
-
-    result:
-      "Преподаватель может самостоятельно управлять содержимым сайта через административную панель, не обращаясь к разработчику. Проект развернут на VPS и готов к использованию.",
-
-    stack: [
-      "React",
-      "TypeScript",
-      "Tailwind CSS",
-      "TanStack Query",
-      "Axios",
-      "Node.js",
-      "Express",
-      "PostgreSQL",
-      "JWT",
-      "Docker",
-      "Nginx",
-    ],
-
-    buttonLabel: "Открыть проект",
-
-    image: "/speaking-site.jpg",
-
-    url: "http://zvuchi-soboi.ru",
+    id: "impulso",
+    title: "Импульсо Дэнс",
+    kind: "Лендинг студии танцев",
+    description:
+      "Направления, расписание по залам, цены и запись на пробное занятие. Владелец в это время делал ремонт в студии, поэтому сайт я собрал сам и только уточнял у него детали.",
+    tags: ["Tilda", "Расписание", "Запись на занятие"],
+    image: impulso,
+    imageSmall: impulsoSmall,
+    domain: "impulsodance.ru",
+    url: "https://impulsodance.ru",
+    linkLabel: "Открыть сайт",
   },
-
   {
-    id: 2,
-
-    title: "Сайт для Рината",
-
-    category: "Лэндинг",
-
-    shortDescription:
-      "Современный сайт репетитора по русскому языку с собственной системой управления контентом.",
-
-    longDescription:
-      "Разработал full-stack приложение для репетитора по русскому языку. Проект включает публичный сайт, защищенную административную панель, REST API и базу данных. Весь контент сайта — услуги, отзывы, FAQ, контакты и информация главной страницы — редактируется через админку без необходимости изменять код.",
-
-    services: [
-      "UX/UI дизайн",
-      "Адаптивная верстка",
-      "Frontend разработка",
-      "Backend разработка",
-      "REST API",
-      "Административная панель",
-      "JWT-аутентификация",
-      "Проектирование базы данных",
-      "Docker и деплой",
-    ],
-
-    result:
-      "Получился быстрый и полностью управляемый сайт, который позволяет владельцу самостоятельно обновлять контент через удобную административную панель.",
-
-    stack: [
-      "React",
-      "TypeScript",
-      "Tailwind CSS",
-      "TanStack Query",
-      "Axios",
-      "Node.js",
-      "Express",
-      "PostgreSQL",
-      "JWT",
-      "Docker",
-      "Nginx",
-    ],
-
-    buttonLabel: "Открыть проект",
-
-    image: "rinat-site.jpg",
-
+    id: "kvinka",
+    title: "KVINKA",
+    kind: "Магазин мерча",
+    description:
+      "Сайт на Tilda, которому не хватило стандартных блоков. Каталог и карточки товаров я переписал своим кодом, подключил оплату через Т⁠-⁠Банк и Ozon Pay и Яндекс Доставку.",
+    tags: ["Tilda + свой код", "Т⁠-⁠Банк", "Ozon Pay", "Яндекс Доставка"],
+    image: kvinka,
+    imageSmall: kvinkaSmall,
+    domain: "kvinka.ru",
+    url: "https://kvinka.ru",
+    linkLabel: "Открыть сайт",
+  },
+  {
+    id: "coolteachers",
+    title: "Ринат Бакеев",
+    kind: "Сайт репетитора по русскому языку",
+    description:
+      "Сайт оформлен как школьная тетрадь. Услуги, отзывы и ответы на вопросы Ринат меняет сам в админке, без разработчика.",
+    tags: ["React", "Node.js", "PostgreSQL", "Админка"],
+    image: coolteachers,
+    imageSmall: coolteachersSmall,
+    domain: "coolteachers.ru",
     url: "https://coolteachers.ru",
+    linkLabel: "Открыть сайт",
   },
   {
-    id: 3,
-
+    id: "alicemath",
+    title: "Математика с Алисой",
+    kind: "Сайт и учебная платформа",
+    description:
+      "У ученика личный кабинет с домашними заданиями, теорией и прогрессом по темам. Задания проверяет программа, так что преподаватель не тратит на это вечера.",
+    tags: ["Next.js", "PostgreSQL", "Личный кабинет"],
+    image: alicemath,
+    imageSmall: alicemathSmall,
+    domain: "alicemath.ru",
+    url: "https://alicemath.ru",
+    linkLabel: "Открыть сайт",
+  },
+  {
+    id: "meridian",
+    title: "Меридиан",
+    kind: "Концепт лендинга архитектурного бюро",
+    description:
+      "Сделал для себя, чтобы показать анимацию: трёхмерный макет города на первом экране, разрез здания, который вычерчивается при прокрутке, и горизонтальная лента проектов.",
+    tags: ["Концепт", "WebGL", "Анимация"],
+    image: meridian,
+    imageSmall: meridianSmall,
+    domain: "meridian-architecture-omega.vercel.app",
+    url: "https://meridian-architecture-omega.vercel.app",
+    linkLabel: "Открыть концепт",
+  },
+  {
+    id: "workouter",
     title: "Workouter",
-
-    category: "Кроссплатформенное приложение",
-
-    shortDescription:
-      "Кроссплатформенное мобильное приложение для отслеживания тренировок и прогресса.",
-
-    longDescription:
-      "Разработал мобильное приложение для Android, которое помогает пользователям вести историю тренировок, отслеживать прогресс и создавать собственные тренировочные программы. Приложение создано на React Native с использованием TypeScript и опубликовано в магазинах приложений.",
-
-    services: [
-      "UX/UI дизайн",
-      "Разработка мобильного приложения",
-      "Кроссплатформенная разработка",
-      "Проектирование архитектуры",
-      "Публикация в Google Play",
-    ],
-
-    result:
-      "Получилось полноценное мобильное приложение, доступно на Android, позволяющее удобно планировать тренировки и анализировать спортивный прогресс.",
-
-    stack: [
-      "React Native",
-      "Expo",
-      "TypeScript",
-      "Expo Router",
-      "React Navigation",
-    ],
-
-    buttonLabel: "Страница в Google Play",
-
-    image: "workouter.jpg",
-
+    kind: "Мобильное приложение",
+    description:
+      "Дневник тренировок для Android: упражнения, подходы, вес и календарь занятий. Работает без рекламы, опубликовано в Google Play.",
+    tags: ["React Native", "Android", "Google Play"],
+    image: workouter,
+    imageSmall: workouterSmall,
+    domain: "play.google.com",
     url: "https://play.google.com/store/apps/details?id=com.aleksesiy.workouter",
+    linkLabel: "Открыть в Google Play",
   },
 ];

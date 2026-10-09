@@ -1,30 +1,34 @@
-export type ContactIconSlug = "telegram" | "whatsapp" | "vk";
 export type Project = {
-  id: number;
+  id: string;
   title: string;
-  category: string;
-  shortDescription: string;
-  longDescription: string;
-  services: string[];
-  result: string;
-  stack: string[];
-  buttonLabel: string;
-  image: string;
-  url: string;
-};
-
-export type ServicePackage = {
-  id: number;
-  title: string;
-  subtitle: string;
-  price: string;
+  kind: string;
   description: string;
-  includes: string[];
-  buttonLabel: string;
-  isPopular: boolean;
+  tags: string[];
+  image: string;
+  imageSmall: string;
+  /** Адрес в «браузерной» рамке над скриншотом */
+  domain: string;
+  url: string;
+  linkLabel: string;
 };
 
-export type Solution = {
-  project: Project;
-  service: ServicePackage;
+export type Review = {
+  author: string;
+  date: string;
+  service: string;
+  projectId: string;
+  projectTitle: string;
+  paragraphs: string[];
+};
+
+export type Service = {
+  title: string;
+  description: string;
+  exampleLabel: string;
+  exampleId: string;
+};
+
+export type Faq = {
+  question: string;
+  answer: string;
 };

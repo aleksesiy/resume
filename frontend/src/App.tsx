@@ -1,29 +1,31 @@
-import Reveal from "./components/Reveal";
+import { useReveal } from "./components/useReveal";
 import About from "./sections/About";
-// import Facts from "./sections/Facts";
+import Contact from "./sections/Contact";
+import FaqSection from "./sections/FaqSection";
 import Footer from "./sections/Footer";
+import Header from "./sections/Header";
 import Hero from "./sections/Hero";
-import NewSolution from "./sections/NewSolution";
-import Philosophy from "./sections/Philosophy";
 import Process from "./sections/Process";
-// import Projects from "./sections/Projects";
-// import Services from "./sections/Services";
-import Solutions from "./sections/Solutions";
+import Reviews from "./sections/Reviews";
+import Services from "./sections/Services";
+import Works from "./sections/Works";
 
 function App() {
+  useReveal();
+
   return (
     <>
-      <Reveal>
+      <Header />
+      <main>
         <Hero />
-      </Reveal>
-      <Philosophy />
-      <Process />
-      {/* <Facts /> */}
-      {/* <Projects /> */}
-      {/* <Services /> */}
-      <Solutions />
-      <NewSolution />
-      <About />
+        <Works />
+        <Reviews />
+        <Services />
+        <Process />
+        <About />
+        <FaqSection />
+        <Contact />
+      </main>
       <Footer />
     </>
   );

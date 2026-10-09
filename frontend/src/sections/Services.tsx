@@ -1,24 +1,28 @@
-import ServiceCard from "../components/ServiceCard";
 import { services } from "../data/services";
+
 export default function Services() {
   return (
-    <section className="section">
+    <section className="section" id="services">
       <div className="container">
-        <div className="mb-20">
-          <span className="section-label">Пакеты</span>
-          <h2 className="mt-4">Услуги</h2>
+        <div className="section-head" data-reveal>
+          <h2>Что я делаю</h2>
+          <p>
+            От одной страницы до сервиса с личным кабинетом. Цену называю после
+            того, как пойму задачу.
+          </p>
         </div>
-        <div
-          className="
-                grid
-                gap-8
-                lg:grid-cols-3
-              "
-        >
+
+        <ul className="services">
           {services.map((service) => (
-            <ServiceCard key={service.id} service={service} />
+            <li className="service" key={service.title} data-reveal>
+              <h3>{service.title}</h3>
+              <p>{service.description}</p>
+              <a className="service-example" href={`#${service.exampleId}`}>
+                Пример: {service.exampleLabel}
+              </a>
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     </section>
   );
