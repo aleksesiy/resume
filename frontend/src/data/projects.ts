@@ -10,6 +10,14 @@ import alicemath from "../assets/projects/alicemath-1280.webp";
 import alicemathSmall from "../assets/projects/alicemath-720.webp";
 import meridian from "../assets/projects/meridian-1280.webp";
 import meridianSmall from "../assets/projects/meridian-720.webp";
+import tochka from "../assets/projects/tochka-1280.webp";
+import tochkaSmall from "../assets/projects/tochka-720.webp";
+import golf from "../assets/projects/golf-1280.webp";
+import golfSmall from "../assets/projects/golf-720.webp";
+import cardex from "../assets/projects/cardex-1280.webp";
+import cardexSmall from "../assets/projects/cardex-720.webp";
+import medovy from "../assets/projects/medovy-1280.webp";
+import medovySmall from "../assets/projects/medovy-720.webp";
 import workouter from "../assets/projects/workouter-1280.webp";
 import workouterSmall from "../assets/projects/workouter-720.webp";
 
@@ -41,6 +49,32 @@ export const projects: Project[] = [
     linkLabel: "Открыть сайт",
   },
   {
+    id: "tochka",
+    title: "Точка красоты",
+    kind: "Сайт салона и Яндекс Директ",
+    description:
+      "Салон в Ивантеевке. На сайте весь прайс из 215 услуг с поиском, работы мастеров и запись в одно касание через YClients. К сайту настроил рекламу в Директе, а Метрика считает клики по записи, звонки и маршруты.",
+    tags: ["Сайт", "YClients", "Яндекс Директ", "Метрика"],
+    image: tochka,
+    imageSmall: tochkaSmall,
+    domain: "tochkakrasoty-ivanteevka.ru",
+    url: "https://tochkakrasoty-ivanteevka.ru",
+    linkLabel: "Открыть сайт",
+  },
+  {
+    id: "golf",
+    title: "Golf Point",
+    kind: "Интернет-магазин гольф-инвентаря",
+    description:
+      "Новые и б/у клюшки в наличии в Петербурге и под заказ. Каталог с фильтрами под каждую категорию и поиск. Сотрудник пересылает боту пост из Telegram-канала, и бот сам собирает карточку товара.",
+    tags: ["Next.js", "Payload CMS", "PostgreSQL", "Telegram-бот"],
+    image: golf,
+    imageSmall: golfSmall,
+    domain: "golf-point.ru",
+    url: "https://golf-point.ru",
+    linkLabel: "Открыть сайт",
+  },
+  {
     id: "coolteachers",
     title: "Ринат Бакеев",
     kind: "Сайт репетитора по русскому языку",
@@ -58,13 +92,39 @@ export const projects: Project[] = [
     title: "Математика с Алисой",
     kind: "Сайт и учебная платформа",
     description:
-      "У ученика личный кабинет с домашними заданиями, теорией и прогрессом по темам. Задания проверяет программа, так что преподаватель не тратит на это вечера.",
+      "У ученика личный кабинет с домашними заданиями, теорией, вариантами экзамена и прогрессом по темам. Первую часть заданий сайт проверяет сам, вторую преподаватель оценивает в своём кабинете.",
     tags: ["Next.js", "PostgreSQL", "Личный кабинет"],
     image: alicemath,
     imageSmall: alicemathSmall,
     domain: "alicemath.ru",
     url: "https://alicemath.ru",
     linkLabel: "Открыть сайт",
+  },
+  {
+    id: "cardex",
+    title: "cardex",
+    kind: "Веб-приложение для изучения слов",
+    description:
+      "Карточки с интервальными повторениями и паки слов от сообщества. Учить можно без регистрации, на телефоне работает офлайн. Делаем вдвоём: на мне весь интерфейс, на напарнике бэкенд и сервер.",
+    tags: ["Next.js", "React", "Tailwind", "PWA"],
+    image: cardex,
+    imageSmall: cardexSmall,
+    domain: "cardex.cool",
+    url: "https://cardex.cool",
+    linkLabel: "Открыть сервис",
+  },
+  {
+    id: "medovy",
+    title: "Медовый",
+    kind: "Концепт сайта для глэмпинга",
+    description:
+      "Предложил глэмпингу в горах Дагестана новый сайт. На первом экране бассейн среди гор, цена за сутки и оценка на Картах, ниже шатры, баня, чем заняться и что посмотреть в часе езды.",
+    tags: ["Концепт", "Лендинг"],
+    image: medovy,
+    imageSmall: medovySmall,
+    domain: "medovy.aleksey-dev.ru",
+    url: "https://medovy.aleksey-dev.ru",
+    linkLabel: "Открыть концепт",
   },
   {
     id: "meridian",
