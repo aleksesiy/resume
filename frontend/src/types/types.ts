@@ -10,6 +10,8 @@ export type Project = {
   domain: string;
   url: string;
   linkLabel: string;
+  /** Ролик первого экрана из public/works, играет при наведении или прокрутке */
+  video?: string;
 };
 
 export type Review = {
