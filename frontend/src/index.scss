@@ -476,22 +476,6 @@ p {
   }
 }
 
-.frame-media {
-  position: relative;
-
-  video {
-    position: absolute;
-    inset: 0;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 0.35s var(--ease-out);
-  }
-}
-
-.frame.is-playing video {
-  opacity: 1;
-}
-
 .frame-bar {
   display: flex;
   align-items: center;
@@ -542,29 +526,17 @@ p {
   scroll-margin-top: calc(var(--header-height) + 24px);
 }
 
-// Активная карточка: рамка чуть увеличивается, внутри играет ролик сайта.
-.work .frame {
-  transition:
-    transform 0.5s var(--ease-out),
-    box-shadow 0.5s var(--ease-out),
-    border-color 0.5s var(--ease-out);
-}
+// На компьютере рамка чуть увеличивается при наведении.
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .work .frame {
+    transition:
+      transform 0.5s var(--ease-out),
+      border-color 0.5s var(--ease-out);
+  }
 
-.work.is-active .frame {
-  transform: scale(1.035);
-  border-color: rgba(74, 222, 128, 0.45);
-  box-shadow:
-    var(--shadow-frame),
-    0 24px 60px rgba(0, 0, 0, 0.45);
-}
-
-.work-wide.is-active .frame {
-  transform: scale(1.025);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .work.is-active .frame {
-    transform: none;
+  .work:hover .frame {
+    transform: scale(1.025);
+    border-color: rgba(74, 222, 128, 0.45);
   }
 }
 
